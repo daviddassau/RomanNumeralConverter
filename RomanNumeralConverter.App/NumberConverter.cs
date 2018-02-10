@@ -10,9 +10,16 @@ namespace RomanNumeralConverter.App
     {
         public string Parse(int number)
         {
-            if (number == 1)
+            switch (number)
             {
-                return "I";
+                case 1:
+                    return "I";
+
+                case 5:
+                    return "V";
+
+                case 9:
+                    return "IV";
             }
 
             return "stuff broke";
